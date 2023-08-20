@@ -103,6 +103,10 @@ public class StateAdapter extends RecyclerView.Adapter<StateAdapter.MyViewHolder
         return dataSet.size();
     }
 
+    public void setDataSet(ArrayList<State> filteredList) {
+        dataSet = filteredList;
+    }
+
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         // imports all existing variables in our xml for a single row
 

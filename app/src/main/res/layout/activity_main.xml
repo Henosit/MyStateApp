@@ -6,18 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".Activities.MainActivity">
 
-    <!-- First RecyclerView for countries -->
+    <!-- Include the Toolbar at the top -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <!-- Include the RecyclerView below the Toolbar -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <!-- Second RecyclerView for bordering countries -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/bordersRecView"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone" />
-    <!-- Initially hidden -->
+        android:layout_marginTop="?attr/actionBarSize"/>
 
 </FrameLayout>
